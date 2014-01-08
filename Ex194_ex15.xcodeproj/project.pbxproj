@@ -21,6 +21,11 @@
 		00BE6406187BD214001537B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00BE63E8187BD214001537B8 /* UIKit.framework */; };
 		00BE640E187BD214001537B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00BE640C187BD214001537B8 /* InfoPlist.strings */; };
 		00BE6410187BD214001537B8 /* Ex194_ex15Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE640F187BD214001537B8 /* Ex194_ex15Tests.m */; };
+		00BE641B187BD245001537B8 /* Product.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE641A187BD245001537B8 /* Product.m */; };
+		00BE641E187BD36B001537B8 /* ProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00BE641D187BD36B001537B8 /* ProductCell.m */; };
+		00BE6422187BD630001537B8 /* i2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00BE641F187BD630001537B8 /* i2.jpeg */; };
+		00BE6423187BD630001537B8 /* i1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 00BE6420187BD630001537B8 /* i1.jpg */; };
+		00BE6424187BD630001537B8 /* i3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 00BE6421187BD630001537B8 /* i3.jpeg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,13 @@
 		00BE640B187BD214001537B8 /* Ex194_ex15Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Ex194_ex15Tests-Info.plist"; sourceTree = "<group>"; };
 		00BE640D187BD214001537B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		00BE640F187BD214001537B8 /* Ex194_ex15Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ex194_ex15Tests.m; sourceTree = "<group>"; };
+		00BE6419187BD245001537B8 /* Product.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Product.h; sourceTree = "<group>"; };
+		00BE641A187BD245001537B8 /* Product.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Product.m; sourceTree = "<group>"; };
+		00BE641C187BD36B001537B8 /* ProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProductCell.h; path = ../ProductCell.h; sourceTree = "<group>"; };
+		00BE641D187BD36B001537B8 /* ProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProductCell.m; path = ../ProductCell.m; sourceTree = "<group>"; };
+		00BE641F187BD630001537B8 /* i2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i2.jpeg; sourceTree = "<group>"; };
+		00BE6420187BD630001537B8 /* i1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i1.jpg; sourceTree = "<group>"; };
+		00BE6421187BD630001537B8 /* i3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = i3.jpeg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +124,11 @@
 		00BE63EA187BD214001537B8 /* Ex194_ex15 */ = {
 			isa = PBXGroup;
 			children = (
+				00BE641F187BD630001537B8 /* i2.jpeg */,
+				00BE6420187BD630001537B8 /* i1.jpg */,
+				00BE6421187BD630001537B8 /* i3.jpeg */,
+				00BE641D187BD36B001537B8 /* ProductCell.m */,
+				00BE641C187BD36B001537B8 /* ProductCell.h */,
 				00BE63F3187BD214001537B8 /* AppDelegate.h */,
 				00BE63F4187BD214001537B8 /* AppDelegate.m */,
 				00BE63F6187BD214001537B8 /* Main.storyboard */,
@@ -119,6 +136,8 @@
 				00BE63FA187BD214001537B8 /* ViewController.m */,
 				00BE63FC187BD214001537B8 /* Images.xcassets */,
 				00BE63EB187BD214001537B8 /* Supporting Files */,
+				00BE6419187BD245001537B8 /* Product.h */,
+				00BE641A187BD245001537B8 /* Product.m */,
 			);
 			path = Ex194_ex15;
 			sourceTree = "<group>";
@@ -228,8 +247,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BE6423187BD630001537B8 /* i1.jpg in Resources */,
 				00BE63FD187BD214001537B8 /* Images.xcassets in Resources */,
 				00BE63EF187BD214001537B8 /* InfoPlist.strings in Resources */,
+				00BE6424187BD630001537B8 /* i3.jpeg in Resources */,
+				00BE6422187BD630001537B8 /* i2.jpeg in Resources */,
 				00BE63F8187BD214001537B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,7 +271,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00BE641E187BD36B001537B8 /* ProductCell.m in Sources */,
 				00BE63FB187BD214001537B8 /* ViewController.m in Sources */,
+				00BE641B187BD245001537B8 /* Product.m in Sources */,
 				00BE63F5187BD214001537B8 /* AppDelegate.m in Sources */,
 				00BE63F1187BD214001537B8 /* main.m in Sources */,
 			);
@@ -460,6 +484,7 @@
 				00BE6415187BD214001537B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		00BE6416187BD214001537B8 /* Build configuration list for PBXNativeTarget "Ex194_ex15Tests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +493,7 @@
 				00BE6418187BD214001537B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
