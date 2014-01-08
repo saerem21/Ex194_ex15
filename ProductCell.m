@@ -8,6 +8,7 @@
 
 #import "ProductCell.h"
 
+
 @implementation ProductCell
 
 -(void)setProductInfo:(Product *)item{
@@ -16,6 +17,8 @@
     self.productPrice.text =item.price;
     self.productImage.image = [UIImage imageNamed:item.imageName];
 }
+
+
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
@@ -31,6 +34,9 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+- (IBAction)addCart:(id)sender {
+    [self.delegate addItem:self];
 }
 
 @end
